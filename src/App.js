@@ -1,13 +1,16 @@
-import "./App.css";
+import React from 'react'
+import Chatbot from './components/Chatbot'
+import Bgimage from './components/chatbotimage.jpg'
 
-function App() {
+const App = () => {
   return (
-    <main class="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 class="text-3xl text-center font-bold underline text-amber-600 shadow-lg">React & Tailwind CSS Starter Pack</h1>
-      <p class="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
-      <img src="https://bit.ly/3wsmzTy" alt="meme" class="mx-auto" />
-    </main>
-  );
+    <div>
+      <div>
+         <img src={Bgimage} alt='background' className='w-full h-[100vh]' />
+      </div>
+      <Chatbot/>
+    </div>
+  )
 }
 
-export default App;
+export default App
